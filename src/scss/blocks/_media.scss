@@ -1,0 +1,114 @@
+.media {
+  padding-top: 104px;
+  padding-bottom: 104px;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black-color);
+    border-radius: 50px;
+    width: 118px;
+    height: 40px;
+  }
+  &__welcome {
+    width: 600px;
+    min-height: 306px;
+    padding-right: 65px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__item {
+    min-height: 306px;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    padding: 32px 24px;
+    justify-content: space-between;
+  }
+  &__item-title {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  &__item-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 307px;
+    height: 306px;
+    z-index: -100;
+  }
+  &__item-inner {
+    border: 1px solid var(--black-color);
+    border-bottom: none;
+    border-right: none;
+    width: 306px;
+    height: 306px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__item-big {
+    position: relative;
+    width: 893px;
+    height: 306px;
+    border: 1px solid var(--black-color);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 24px;
+  }
+  &__big-img {
+    position: absolute;
+    z-index: -10;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+  }
+  &__star {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.card-1 {
+  border: 1px solid var(--black-color);
+  border-bottom: none;
+}
+.card-2 {
+  border: 1px solid var(--black-color);
+  border-right: none;
+  border-bottom: none;
+  .media__item-title {
+    width: 540px;
+  }
+}
+.card-3 {
+  position: relative;
+  border: 1px solid var(--black-color);
+}
+.divider {
+  height: 1px;
+  width: 600px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-color: var(--black-color);
+}

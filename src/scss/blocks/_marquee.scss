@@ -1,0 +1,48 @@
+.support__line {
+  padding-top: 48px;
+  padding-bottom: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  overflow: hidden;
+}
+
+.line {
+  font-size: 88px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 0 24px;
+  &:after {
+    content: 'Support US ';
+}
+}
+
+.line-one {
+  animation: marquee1 20s infinite linear;
+  animation-delay: -20s;
+}
+
+.line__second {
+  animation: marquee2 20s infinite linear;
+  animation-delay: -10s;
+}
+
+@keyframes marquee1 {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-200%);
+  }
+}

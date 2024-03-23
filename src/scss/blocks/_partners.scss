@@ -1,0 +1,30 @@
+.partners {
+  padding: 104px 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 290px);
+  }
+  &__item {
+    border: 1px solid var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__item-bg {
+    background-image: url('./../img/partners/partners-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black-color);
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

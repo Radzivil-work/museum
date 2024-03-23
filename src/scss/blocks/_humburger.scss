@@ -1,0 +1,53 @@
+.humburger {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: none;
+  &__item { 
+    position: absolute;
+    background-color: var(--black-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 2px;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: #000;
+      transition: 0.5s;
+    }
+    &::before {
+      top: -6px;
+    }
+    &::after {
+      top: 6px;
+    }
+  }
+}
+
+.close {
+  .humburger__item {
+    background-color: transparent;
+  }
+  .humburger__item::before {
+    top: 0px;
+    transform: rotate(45deg);
+  }
+  .humburger__item::after {
+    top: 0px;
+    transform: rotate(135deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .humburger {
+    display: block;
+    z-index: 100;
+  }
+}

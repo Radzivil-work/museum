@@ -1,0 +1,27 @@
+.html,
+.body {
+  height: 100%;
+}
+.body {
+  font-family: var(--font-family);
+  background-color: var(--main-background-color);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-top: 12px;
+}

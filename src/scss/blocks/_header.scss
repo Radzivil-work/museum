@@ -48,7 +48,7 @@
   &__mobile {
     position: fixed;
     width: 100%;
-    height: 54vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -64,9 +64,13 @@
     bottom: 0;
     z-index: 90;
   }
+  &__mobile-decorate {
+    position: relative;
+    margin: 0 auto;
+  }
   &__mobile-back {
     position: fixed;
-    height: 80vh;
+    height: 95vh;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -84,12 +88,12 @@
     z-index: 80;
   }
   &__mobile-nav {
-    margin-top: 40px;
+    margin-top: 80px;
   }
   &__mobile-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
   }
   &__social {
     display: flex;
@@ -121,7 +125,7 @@
     z-index: 100;
   }
   .header__btn {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 

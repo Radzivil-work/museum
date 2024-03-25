@@ -25,3 +25,36 @@
     max-width: 408px;
   }
 }
+
+@media (max-width: 991px) {
+  .support {
+    padding: 60px 0px 40px 0px;
+  }
+  .support__btn  {
+    margin-top: 80px;
+    width: 280px;
+    height: 102px;
+    font-size: 28px;
+  }
+  .line {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .support__line {
+    padding: 20px 0 16px 0;
+  }
+  .line {
+    font-size: 40px;
+  }
+  .support__btn  {
+    margin-top: 60px;
+    width: 230px;
+    height: 72px;
+    font-size: 20px;
+  }
+  .support__text {
+    font-size: 14px;
+  }
+}

@@ -44,6 +44,12 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    &:hover {
+    border: 1px solid #000;
+    filter: drop-shadow(rgba(0,0,0,0.1) 0rem 1rem 3px);
+    }
   }
   &__mobile {
     position: fixed;
@@ -107,6 +113,13 @@
 }
 .show-menu {
   transform: translateY(0);
+}
+.logo {
+  cursor: pointer;
+  z-index: 200;
+  &__img {
+    cursor: pointer;
+  }
 }
 @media (max-width: 768px) {
   .header__nav {

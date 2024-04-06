@@ -14,14 +14,12 @@
   &__title {
     text-transform: uppercase;
     font-size: 14px;
+    margin-top: 63px;
   }
   &__text {
-    margin-top: 208px;
+    margin-top: 145px;
     font-size: 22px;
     text-transform: uppercase;
-    p {
-      text-align: justify;
-    }
   }
   &__text-wrapper {
     margin-top: 60px;
@@ -33,18 +31,14 @@
   }
   &__descr {
     max-width: 510px;
-    margin-top: 32px;
     font-weight: 400;
     text-align: justify;
-  }
-  &__img-wrapper {
-    width: 612px;
-    height: 610px;
+    margin-bottom: 32px;
   }
   &__img-wrapper {
     width: 636px;
     height: 616px;
-    margin: 0px 0 0 40px;
+    margin: -78px 0 0 45px;
   }
 }
 
@@ -78,6 +72,9 @@
   .about__text {
     margin-top: 0px;
   }
+  .about__text-title {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 568px) {
@@ -107,7 +104,7 @@
   }
   .about__descr {
     font-size: 12px;
-    margin-top: 24px;
+    margin-top: 0px;
   }
   .about__text-wrapper {
     margin-top: 40px;

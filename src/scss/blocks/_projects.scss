@@ -75,9 +75,16 @@
     left: 24px;
   }
   &__three-bottom {
+    display: block;
     background-color: var(--black-color);
     height: 333px;
     position: relative;
+    cursor: pointer;
+    &:hover {
+      .projects__link {
+        animation: arrow-hover 1s linear infinite;
+      }
+    }
   }
   &__link {
     position: absolute;
@@ -132,6 +139,7 @@
   .projects__descr-title {
     text-align: left;
     margin-top: 8px;
+    font-size: 14px;
   }
   .projects__text-one {
     width: 460px;
@@ -139,15 +147,24 @@
   }
   .projects__one-title {
     margin-top: 244px;
+    font-size: 20px;
   }
   .projects__text-two {
     width: 460px;
+    font-size: 20px;
   }
   .projects__text-three {
     width: 460px;
+    font-size: 20px;
   }
   .projects__three-star {
     top: 45px;
+  }
+  .projects__text-descr {
+    font-size: 14px;
+  }
+  .projects__text-title {
+    font-size: 20px;
   }
 }
 
@@ -192,5 +209,18 @@
   .projects__two-title,
   .projects__text-title {
     font-size: 14px;
+  }
+}
+
+
+@keyframes arrow-hover {
+  0% {
+      right: 24px;
+  }
+  50% {
+      right: 30px;
+  }
+  100% {
+      right: 24px;
   }
 }
